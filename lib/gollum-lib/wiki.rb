@@ -618,7 +618,7 @@ module Gollum
         file_name          = Page::valid_page_name?(path) ? path.chomp(::File.extname(path)) : path
         # If there's not already a result for file_name then
         # the value is nil and nil.to_i is 0.
-        results[file_name] = results[file_name].to_i + 1;
+        results[file_name] = results[file_name].to_i + 1
       end
 
       results.map do |key, val|
